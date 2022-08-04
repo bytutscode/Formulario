@@ -34,7 +34,8 @@ header::after {
 }
 
 main {
-    padding-top:100px;
+    padding-top:50px;
+    padding-bottomp:50px;
     flex: 1;
 }
 
