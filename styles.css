@@ -29,8 +29,8 @@ header::after {
 }
 
 section {
-    height: calc(100vh - 151px);
     display: flex;
+    flex: 1;
     justify-content: center;
     align-items: center;
 }
@@ -260,6 +260,8 @@ button:disabled {
 
 footer {
     display: flex;
+    position: fixed;
+    bottom: 0;
     justify-content: center;
     align-items: center;
     width: 100%;
