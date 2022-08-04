@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Form</title>
+</head>
+<body>
+<header><h1>Faça seu Cadastro</h1></header>
+<main>
+    <section>
+    <form class="validator" method="GET" action="">
+        <div class="container">
+            <div class="form-area">
+                
+                <div class="step-one">
+                    <h1>Dados Iniciais</h1>
+                    <label>
+                        <input type="text" placeholder="Nome*" autocomplete="off" data-rules="required|min=5" name="name">
+                    </label>
+                    <label>
+                        <input type="text" placeholder="Sobrenome*" autocomplete="off" data-rules="required|min=3" name="last-name">
+                    </label>
+                
+                </div>
+                <div class="step-two">
+                    <h1>Gênero</h1>
+                    <label>
+                        <input type="radio" value="man" checked name="gener">
+                        <span>Masculino</span>
+                    </label>
+                    <label>
+                        <input type="radio" value="woman" name="gener">
+                        <span>Feminino</span>
+                    </label>
+                </div>
+                <div class="step-three">
+                    <h1>Contato</h1>
+                    <label>
+                        <input autocomplete="off" type="text" placeholder="Email*" data-rules="required|email" name="Email">
+                    </label>
+                    
+                    <label>
+                        <input id="tel" autocomplete="off" maxlength="15" type="tel" placeholder="Celular*" data-rules="required" name="cel">
+                    </label>
+                </div>
+
+                <div class="step-four">
+                    <h1>Crie sua Senha</h1>
+                    <label>
+                        <input autocomplete="off" id="pass1" type="password" placeholder="Crie uma Senha*" data-rules="required|min=8|pass" name="pass">
+                    </label>
+                    <label>
+                        <input autocomplete="off" id="pass2" type="password" placeholder="Repita sua Senha*" data-rules="required|min=8|pass" name="pass2">
+                    </label>
+                </div>
+    
+               
+            </div>
+            <div class="container-bar">
+                <div class="bar-area">
+                    <div class="progress-bar"></div>
+                    <div class="stages active">1</div>
+                    <div class="stages">2</div>
+                    <div class="stages">3</div>
+                    <div class="stages">4</div>
+                </div>
+                <div class="buttons-area">
+                    <button type="button" class="buttons prev">🢀</button>
+                    <button type="button" class="buttons next">🢂</button>
+                </div>
+                
+            </div>
+            <button disabled type="submit" class="finish">Finalizar</button>
+    </form>
+        </div>
+    </section>
+</main>
+<footer>
+    <h3>2022 - Criado e desenvolvido por <a href="https://www.linkedin.com/in/samuel-lima-a22821243?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BtrfYKZ8JQTWacYhX8k5OZQ%3D%3D">Samuel Lima</a></h3>
+</footer>
+    
+<script src="script.js"></script>
+<script src="scriptbar.js"></script>
+</body>
+</html>
